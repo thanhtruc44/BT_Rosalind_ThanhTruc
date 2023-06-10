@@ -1,6 +1,6 @@
 # BT_Rosalind_ThanhTruc
 # Bài tập về Kmer, Consensus và Assemble
-## Bài tập 1: Đếm k-mer lặp lại trong Chuỗi DNA
+## Bài tập 1: Đếm các k-mer lặp lại trong chuỗi DNA
 ### Mô tả
 Chương trình Python này đếm số lần xuất hiện của k-mer (chuỗi con có độ dài k) xuất hiện hơn hai lần trong một chuỗi DNA được cung cấp với giá trị k tối thiểu là 10. Nó lấy một tệp FASTA chứa chuỗi DNA làm đầu vào và đưa ra các k-mer lặp lại cùng với số lần xuất hiện. Chương trình mang lại nhiều ý nghĩa sinh học và ứng dụng to lớn: phân tích tổ hợp gen; phát hiện và phân loại chuỗi ứng dụng trong phân loại các loại gen và loại vi khuẩn; tìm kiếm motif; dự đoán khả năng liên kết với protein; phân tích genome và nhiều ứng dụng đang nghiên cứu
 ### Yêu cầu
@@ -23,7 +23,7 @@ python script.py sequence.fasta --k 10
 Để biết thêm thông tin hoặc có ý kiến đóng góp, vui lòng liên hệ qua trucle2k2@gmail.com. 
 ### Giấy phép
 Dự án này được cấp phép theo [MIT License].
-## Bài tập 2: Xây dựng trình tự đồng thuần từ các chuỗi DNA có cùng kích thước
+## Bài tập 2: Xây dựng trình tự đồng thuận từ các chuỗi DNA có cùng kích thước
 ### Mô tả
 Chương trình Python này tính toán trình tự đồng thuận (consensus string) dựa trên profile matrix của các nucleotide với dữ liệu đầu vào là một tệp FASTA chứa các chuỗi DNA dựa trên profile matrix của các nucleotide.
 ### Yêu cầu
