@@ -16,10 +16,13 @@ python script.py tên_tệp [--k K]
 3. Chương trình sẽ xuất ra các k-mer lặp lại và số lần xuất hiện của chúng.
 ### Ví dụ
 python script.py sequence.fasta --k 10
-### Giấy phép
-Dự án này được cấp phép theo [MIT License].
+### Tác giả
+- Tên tác giả: Lê Thanh Trúc
+- Năm sinh: 2002
 ### Liên hệ
 Để biết thêm thông tin hoặc có ý kiến đóng góp, vui lòng liên hệ qua trucle2k2@gmail.com. 
+### Giấy phép
+Dự án này được cấp phép theo [MIT License].
 ## Bài tập 2: Xây dựng trình tự đồng thuần từ các chuỗi DNA có cùng kích thước
 ### Mô tả
 Chương trình Python này tính toán trình tự đồng thuận (consensus string) dựa trên profile matrix của các nucleotide với dữ liệu đầu vào là một tệp FASTA chứa các chuỗi DNA dựa trên profile matrix của các nucleotide.
@@ -41,7 +44,7 @@ Chương trình Python này tính toán trình tự đồng thuận (consensus s
 ### Tác giả
 - Tên tác giả: Lê Thanh Trúc
 - Năm sinh: 2002
-### Đóng góp
+### Liên hệ
 Để biết thêm thông tin hoặc có ý kiến đóng góp, vui lòng liên hệ qua trucle2k2@gmail.com. 
 ### Giấy phép
 Chương trình này được phân phối dưới giấy phép [MIT License]
