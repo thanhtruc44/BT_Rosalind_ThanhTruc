@@ -30,7 +30,7 @@ Chương trình Python này tính toán trình tự đồng thuận (consensus s
 - Python 3.x
 - Thư viện Bio của Python: `pip install biopython`
 ### Cài đặt
-1. Tải mã nguồn chương trình từ 
+1. Tải mã nguồn chương trình từ [GitHub] (https://github.com/thanhtruc44/BT_Rosalind_ThanhTruc.git)
 2. Cài đặt các yêu cầu với pip: `pip install -r requirements.txt`
 ### Sử dụng
 1. Đặt tệp FASTA chứa các chuỗi DNA cần tính toán vào cùng thư mục với chương trình và đổi tên tệp thành `Seq02.fasta` hoặc chỉnh sửa tên tệp trong mã nguồn chương trình.
