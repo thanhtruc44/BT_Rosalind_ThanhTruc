@@ -25,7 +25,7 @@ python script.py sequence.fasta --k 10
 Dự án này được cấp phép theo [MIT License].
 ## Bài tập 2: Xây dựng trình tự đồng thuận từ các chuỗi DNA có cùng kích thước
 ### Mô tả
-Chương trình Python này tính toán trình tự đồng thuận (consensus string) dựa trên profile matrix của các nucleotide với dữ liệu đầu vào là một tệp FASTA chứa các chuỗi DNA dựa trên profile matrix của các nucleotide.
+Chương trình Python này tính toán trình tự đồng thuận (consensus string) dựa trên profile matrix của các nucleotide với dữ liệu đầu vào là một tệp FASTA chứa các chuỗi DNA dựa trên profile matrix của các nucleotide. Chương trình này có nhiều ứng dụng to lớn: Giảm sự sai lệch và nhiễu dữ liệu bằng cách kết hợp thông tin từ nhiều chuỗi và tạo ra một chuỗi "tổng hợp" chính xác hơn; xác định các biến thể và đa dạng bằng cách xác định các biến thể và đa dạng trong tập dữ liệu DNA hoặc protein; tạo ra genome reference giúp cung cấp một trình tự đại diện cho loài hoặc biến thể cụ thể và là một dữ liệu quan trọng trong nghiên cứu sinh học và y học; phân tích chức năng gen: xây dựng trình tự đồng thuận có thể hỗ trợ phân tích chức năng gen bằng cách tạo ra một trình tự đại diện cho gen hoặc các vùng quan trọng của gen
 ### Yêu cầu
 - Python 3.x
 - Thư viện Bio của Python: `pip install biopython`
