@@ -21,14 +21,15 @@ def count_kmers(sequence,k_min):
 #Tạo một đối tượng ArgumentParser từ module argparse giúp xử lí các đối số dòng lệnh
 parser = argparse.ArgumentParser(description='Find repeated k-mers in a DNA sequence.')
 # Tạo một đối số tên là filename kiểu str và thông tin mô tả
-parser.add_argument('filename', type=str, help='Path to the FASTA file containing the DNA sequence')
+parser.add_argument('filename', type=str, help='Path to the FASTA file containing the DNA sequence') # Biến positional, hơi khó sử dụng !. Nên specify giống đối số trong trường hợp này (VD: -f, --filename)
 # Tạo một đối tên là k_min, kiểu số nguyên, giá trị mặc định là 10 và thông tin mô tả 
-parser.add_argument('--k', type=int, default=10, help='Length of k-mers (default: 10)')
+parser.add_argument('-k','--kmer', type=int, default=10, help='Length of k-mers (default: 10)') # Chỗ này em nên để định nghĩa đối số như này
 #Giúp chương trình nhận được thông tin từ các args 
 args = parser.parse_args()
 #Mở tệp được chỉ định là đối số filename để đọc nội dung, 'with open' đảm bảo tệp được đóng tự động sau khi hoàn thành công việc.
 with open(args.filename, 'r') as file:
     #Bỏ dòng đầu tiên (header)
+    ## Có cách nào generalize việc đọc file fasta ko ?
     file.readline()  
     sequence = file.read()
 # Gọi hàm count_kmers với tham số sequence và args.k và lưu vào biến counts
