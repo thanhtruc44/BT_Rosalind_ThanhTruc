@@ -4,7 +4,7 @@ from Bio import SeqIO
 # Cấu hình logging với mức độ quan trọng info
 logging.basicConfig(filename='consensus.log', level=logging.INFO)
 # Đường dẫn đến tệp fasta
-fasta_file = 'Seq02.fasta'
+fasta_file = 'seq02.fasta'
 # Số lượng chuỗi cần xem xét
 num_sequences = 10
 # Đọc các chuỗi từ tệp fasta

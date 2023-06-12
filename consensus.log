@@ -1,0 +1,13 @@
+INFO:root:Doc duoc 10 chuoi tu tep fasta
+INFO:root:Tao ham profile_maxtrix thanh cong
+INFO:root:Tao ham consensus_string thanh cong
+INFO:root:Da tinh toan profile matrix
+INFO:root:Da tao consensus string
+INFO:root:Read 10 sequences from FASTA file.
+INFO:root:Calculated profile matrix.
+INFO:root:Created consensus string: TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+INFO:root:Doc duoc 10 chuoi tu tep fasta
+INFO:root:Tao ham profile_maxtrix thanh cong
+INFO:root:Tao ham consensus_string thanh cong
+INFO:root:Da tinh toan profile matrix
+INFO:root:Da tao consensus string
