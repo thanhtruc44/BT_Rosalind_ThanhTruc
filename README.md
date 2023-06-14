@@ -58,12 +58,12 @@ fasta_file: Đường dẫn đến tập tin FASTA chứa các đoạn DNA đầ
 -k K: Độ dài của k-mer. Xác định độ dài của các đoạn con được sử dụng để xác định sự chồng chéo. Giá trị mặc định là 3.
 -v, --verbose: In ra thông tin chi tiết trong quá trình thực thi.
 ###Cách hoạt động
-- Chương trình đọc các đoạn DNA từ tập tin FASTA đầu vào.
-- Nó xây dựng một đồ thị de Bruijn dựa trên các đoạn và độ dài k-mer đã chỉ định.
-- Chương trình tìm một đường đi Euler trong đồ thị de Bruijn.
-- Đường đi Euler biểu diễn chuỗi được xây dựng với các sự chồng chéo.
-- Chương trình trích xuất chuỗi cuối cùng bằng cách ghép các đoạn con trong đường đi Euler, tính đến sự chồng chéo.
-- Chuỗi DNA đã xây dựng lại được in ra làm kết quả đầu ra.
+Chương trình đọc các đoạn DNA từ tập tin FASTA đầu vào.
+Nó xây dựng một đồ thị de Bruijn dựa trên các đoạn và độ dài k-mer đã chỉ định.
+Chương trình tìm một đường đi Euler trong đồ thị de Bruijn.
+Đường đi Euler biểu diễn chuỗi được xây dựng với các sự chồng chéo.
+Chương trình trích xuất chuỗi cuối cùng bằng cách ghép các đoạn con trong đường đi Euler, tính đến sự chồng chéo.
+Chuỗi DNA đã xây dựng lại được in ra làm kết quả đầu ra.
 ###Ví dụ
 python dna_sequence_assembly.py -k 4 reads.fasta
 Lệnh này đọc các đoạn DNA từ tập tin reads.fasta, sử dụng độ dài k-mer là 4, thực hiện lắp ghép chuỗi DNA và hiển thị chuỗi DNA đã xây dựng lại.
