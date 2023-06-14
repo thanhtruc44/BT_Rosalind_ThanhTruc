@@ -21,8 +21,6 @@ python script.py sequence.fasta --k 10
 - Năm sinh: 2002
 ### Liên hệ
 Để biết thêm thông tin hoặc có ý kiến đóng góp, vui lòng liên hệ qua trucle2k2@gmail.com. 
-### Giấy phép
-Dự án này được cấp phép theo [MIT License].
 ## Bài tập 2: Xây dựng trình tự đồng thuận từ các chuỗi DNA có cùng kích thước
 ### Mô tả
 Chương trình Python này tính toán trình tự đồng thuận (consensus string) dựa trên profile matrix của các nucleotide với dữ liệu đầu vào là một tệp FASTA chứa các chuỗi DNA dựa trên profile matrix của các nucleotide. Chương trình này có nhiều ứng dụng to lớn: Giảm sự sai lệch và nhiễu dữ liệu bằng cách kết hợp thông tin từ nhiều chuỗi và tạo ra một chuỗi "tổng hợp" chính xác hơn; xác định các biến thể và đa dạng bằng cách xác định các biến thể và đa dạng trong tập dữ liệu DNA hoặc protein; tạo ra genome reference giúp cung cấp một trình tự đại diện cho loài hoặc biến thể cụ thể và là một dữ liệu quan trọng trong nghiên cứu sinh học và y học; phân tích chức năng gen: xây dựng trình tự đồng thuận có thể hỗ trợ phân tích chức năng gen bằng cách tạo ra một trình tự đại diện cho gen hoặc các vùng quan trọng của gen
@@ -46,5 +44,29 @@ Chương trình Python này tính toán trình tự đồng thuận (consensus s
 - Năm sinh: 2002
 ### Liên hệ
 Để biết thêm thông tin hoặc có ý kiến đóng góp, vui lòng liên hệ qua trucle2k2@gmail.com. 
-### Giấy phép
-Chương trình này được phân phối dưới giấy phép [MIT License]
+##Bài tập 3
+###Mô tả
+Chương trình này thực hiện lắp ghép chuỗi DNA bằng cách sử dụng phương pháp overlap dựa trên đồ thị de Bruijn. Nó nhận đầu vào là một tập hợp các đoạn DNA dạng FASTA và xây dựng lại chuỗi DNA ban đầu.
+###Yêu cầu
+Python 3.x
+Thư viện BioPython (pip install biopython)
+###Cách sử dụng
+python dna_sequence_assembly.py [-h] [-k K] [-v] fasta_file
+###Các đối số bắt buộc:
+fasta_file: Đường dẫn đến tập tin FASTA chứa các đoạn DNA đầu vào.
+###Các đối số tùy chọn:
+-k K: Độ dài của k-mer. Xác định độ dài của các đoạn con được sử dụng để xác định sự chồng chéo. Giá trị mặc định là 3.
+-v, --verbose: In ra thông tin chi tiết trong quá trình thực thi.
+###Cách hoạt động
+- Chương trình đọc các đoạn DNA từ tập tin FASTA đầu vào.
+- Nó xây dựng một đồ thị de Bruijn dựa trên các đoạn và độ dài k-mer đã chỉ định.
+- Chương trình tìm một đường đi Euler trong đồ thị de Bruijn.
+- Đường đi Euler biểu diễn chuỗi được xây dựng với các sự chồng chéo.
+- Chương trình trích xuất chuỗi cuối cùng bằng cách ghép các đoạn con trong đường đi Euler, tính đến sự chồng chéo.
+- Chuỗi DNA đã xây dựng lại được in ra làm kết quả đầu ra.
+###Ví dụ
+python dna_sequence_assembly.py -k 4 reads.fasta
+Lệnh này đọc các đoạn DNA từ tập tin reads.fasta, sử dụng độ dài k-mer là 4, thực hiện lắp ghép chuỗi DNA và hiển thị chuỗi DNA đã xây dựng lại.
+###Đầu ra
+Chương trình xuất chuỗi DNA đã được lắp ghép ra màn hình console.
+Assembled DNA sequence: ACTCGATCGATCGATCG
