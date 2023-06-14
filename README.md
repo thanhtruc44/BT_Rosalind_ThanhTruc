@@ -44,29 +44,29 @@ Chương trình Python này tính toán trình tự đồng thuận (consensus s
 - Năm sinh: 2002
 ### Liên hệ
 Để biết thêm thông tin hoặc có ý kiến đóng góp, vui lòng liên hệ qua trucle2k2@gmail.com. 
-##Bài tập 3
-###Mô tả
+## Bài tập 3 về lắp ráp bộ gen
+### Mô tả
 Chương trình này thực hiện lắp ghép chuỗi DNA bằng cách sử dụng phương pháp overlap dựa trên đồ thị de Bruijn. Nó nhận đầu vào là một tập hợp các đoạn DNA dạng FASTA và xây dựng lại chuỗi DNA ban đầu.
-###Yêu cầu
+### Yêu cầu
 Python 3.x
 Thư viện BioPython (pip install biopython)
-###Cách sử dụng
+### Cách sử dụng
 python dna_sequence_assembly.py [-h] [-k K] [-v] fasta_file
-###Các đối số bắt buộc:
+### Các đối số bắt buộc:
 fasta_file: Đường dẫn đến tập tin FASTA chứa các đoạn DNA đầu vào.
-###Các đối số tùy chọn:
+### Các đối số tùy chọn:
 -k K: Độ dài của k-mer. Xác định độ dài của các đoạn con được sử dụng để xác định sự chồng chéo. Giá trị mặc định là 3.
 -v, --verbose: In ra thông tin chi tiết trong quá trình thực thi.
-###Cách hoạt động
+### Cách hoạt động
 Chương trình đọc các đoạn DNA từ tập tin FASTA đầu vào.
 Nó xây dựng một đồ thị de Bruijn dựa trên các đoạn và độ dài k-mer đã chỉ định.
 Chương trình tìm một đường đi Euler trong đồ thị de Bruijn.
 Đường đi Euler biểu diễn chuỗi được xây dựng với các sự chồng chéo.
 Chương trình trích xuất chuỗi cuối cùng bằng cách ghép các đoạn con trong đường đi Euler, tính đến sự chồng chéo.
 Chuỗi DNA đã xây dựng lại được in ra làm kết quả đầu ra.
-###Ví dụ
+### Ví dụ
 python dna_sequence_assembly.py -k 4 reads.fasta
 Lệnh này đọc các đoạn DNA từ tập tin reads.fasta, sử dụng độ dài k-mer là 4, thực hiện lắp ghép chuỗi DNA và hiển thị chuỗi DNA đã xây dựng lại.
-###Đầu ra
+### Đầu ra
 Chương trình xuất chuỗi DNA đã được lắp ghép ra màn hình console.
 Assembled DNA sequence: ACTCGATCGATCGATCG
